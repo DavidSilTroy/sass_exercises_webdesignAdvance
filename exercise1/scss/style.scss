@@ -1,0 +1,51 @@
+//Topics involved: variables, functions and nesting
+@use "sass:color";
+$fontstack: 'Gotu';
+$fontsize: 16px;
+$primary: lightskyblue;
+$primary_dark: color.scale($primary, $lightness:-60%);
+#container {
+    max-width: 800px;
+    margin: auto 0 auto 0;
+}
+
+h1 {
+    color: $primary_dark;
+}
+
+nav {
+    ul {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 0;
+        li {
+            display: block;
+            background-color: $primary;
+            outline: 1px solid $primary_dark;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            transition-timing-function: ease;
+            transition-duration: 1s;
+            a {
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: $primary_dark;
+                font-weight: bold;
+                a {
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        ul {
+            flex-direction: column;
+        }
+    }
+}

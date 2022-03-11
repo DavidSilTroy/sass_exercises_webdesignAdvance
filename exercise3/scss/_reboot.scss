@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $fontstack-text;
+    @include layout(white, 1rem);
+    h1 {
+        font-family: $fontstack-titles;
+        font-size: 1.75rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: $small) {
+    body {
+        @include layout(black, 1.25rem);
+    }
+}

@@ -1,0 +1,43 @@
+#container {
+  max-width: 800px;
+  margin: auto 0 auto 0;
+}
+
+h1 {
+  color: #065e94;
+}
+
+nav ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0;
+}
+nav ul li {
+  display: block;
+  background-color: lightskyblue;
+  outline: 1px solid #065e94;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  transition-timing-function: ease;
+  transition-duration: 1s;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li:hover {
+  background-color: #065e94;
+  font-weight: bold;
+}
+nav ul li:hover a {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
