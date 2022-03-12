@@ -1,6 +1,6 @@
 @mixin layout($color, $size:14px) {
     color: $color;
-    background-color: color.scale(color.invert($color), $lightness: 80%);
+    background-color: color.scale(color.invert($color), $lightness: 20%);
     font-size: $size;
     margin: $size;
     padding: $size;

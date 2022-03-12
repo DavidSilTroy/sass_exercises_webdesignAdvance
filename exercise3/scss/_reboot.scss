@@ -1,6 +1,7 @@
 * {
+    padding-bottom: 1rem;
     margin: 0;
-    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -10,6 +11,24 @@ body {
         font-family: $fontstack-titles;
         font-size: 1.75rem;
         padding-bottom: 1rem;
+    }
+}
+
+article {
+    p {
+        padding-bottom: 1rem;
+    }
+}
+
+a {
+    width: 130px;
+    font-family: $fontstack-titles;
+    @include layout(black, 1rem);
+    margin-left: 0;
+    margin-bottom: 3rem;
+    &:hover {
+        @include layout(dimgray, 1rem);
+        margin-left: 0;
     }
 }
 
