@@ -1,0 +1,8 @@
+@mixin color-box($color, $alpha:15) {
+    background: rgba($color, calc($alpha/100));
+    border: 1px solid color.adjust($color, $lightness: -10%);
+    color: $value;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.225rem;
+}

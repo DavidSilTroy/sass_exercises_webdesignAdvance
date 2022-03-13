@@ -1,0 +1,44 @@
+@for $var from 1 to 5 {
+    .p-#{$var} {
+        padding: #{calc($var/3)}rem;
+    }
+    .px-#{$var} {
+        padding: 0 #{calc($var/3)}rem 0 #{calc($var/3)}rem;
+    }
+    .py-#{$var} {
+        padding:#{calc($var/3)}rem 0 #{calc($var/3)}rem 0;
+    }
+    .pb-#{$var} {
+        padding-bottom:#{calc($var/3)}rem;
+    }
+    .pt-#{$var} {
+        padding-top:#{calc($var/3)}rem;
+    }
+    .pl-#{$var} {
+        padding-left:#{calc($var/3)}rem;
+    }
+    .pr-#{$var} {
+        padding-right:#{calc($var/3)}rem;
+    }
+    .m-#{$var} {
+        margin: #{calc($var/3)}rem;
+    }
+    .mx-#{$var} {
+        margin: 0 #{calc($var/3)}rem 0 #{calc($var/3)}rem;
+    }
+    .my-#{$var} {
+        margin:#{calc($var/3)}rem 0 #{calc($var/3)}rem 0;
+    }
+    .mb-#{$var} {
+        margin-bottom:#{calc($var/3)}rem;
+    }
+    .mt-#{$var} {
+        margin-top:#{calc($var/3)}rem;
+    }
+    .ml-#{$var} {
+        margin-left:#{calc($var/3)}rem;
+    }
+    .mr-#{$var} {
+        margin-right:#{calc($var/3)}rem;
+    }
+}
