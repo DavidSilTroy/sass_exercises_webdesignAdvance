@@ -1,10 +1,14 @@
+body {
+  line-height: 1.2rem;
+}
+
 #container {
   max-width: 800px;
-  margin: auto 0 auto 0;
+  margin: auto;
 }
 
 h1 {
-  color: #065e94;
+  color: #043b5c;
 }
 
 nav ul {
@@ -16,22 +20,28 @@ nav ul {
 nav ul li {
   display: block;
   background-color: lightskyblue;
-  outline: 1px solid #065e94;
+  outline: 1px solid #043b5c;
   width: 100%;
   text-align: center;
   padding: 10px;
-  transition-timing-function: ease;
-  transition-duration: 1s;
+  transition: font-weight 0.5s ease-in-out;
+  transition: background-color 1s linear;
 }
 nav ul li a {
   text-decoration: none;
+  color: #043b5c;
 }
 nav ul li:hover {
-  background-color: #065e94;
-  font-weight: bold;
+  --bold: 700;
+  font-weight: var(--bold);
+  background-color: #043b5c;
 }
 nav ul li:hover a {
-  color: aliceblue;
+  color: lightskyblue;
+}
+
+main ul {
+  padding-inline-start: 1rem;
 }
 
 @media screen and (max-width: 650px) {

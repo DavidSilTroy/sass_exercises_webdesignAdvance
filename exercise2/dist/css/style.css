@@ -1,6 +1,6 @@
 #container {
   color: darkred;
-  background-color: #f1ffff;
+  background-color: #e3ffff;
   font-size: 14px;
   margin: 14px;
   padding: 14px;
@@ -11,7 +11,7 @@
 @media screen and (min-width: 576px) {
   #container {
     color: darkblue;
-    background-color: #fffff1;
+    background-color: #ffffe3;
     font-size: 16px;
     margin: 16px;
     padding: 16px;
@@ -22,7 +22,7 @@
 @media screen and (min-width: 768px) {
   #container {
     color: darkgreen;
-    background-color: #fff5ff;
+    background-color: #ffebff;
     font-size: 20px;
     margin: 20px;
     padding: 20px;

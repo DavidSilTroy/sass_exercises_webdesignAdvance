@@ -1,12 +1,13 @@
 //Topics involved: variables, functions and nesting
 @use "sass:color";
+@import "reboot";
 $fontstack: 'Gotu';
 $fontsize: 16px;
 $primary: lightskyblue;
-$primary_dark: color.scale($primary, $lightness:-60%);
+$primary_dark: color.scale($primary, $lightness:-75%);
 #container {
     max-width: 800px;
-    margin: auto 0 auto 0;
+    margin: auto; //aling-center
 }
 
 h1 {
@@ -26,19 +27,27 @@ nav {
             width: 100%;
             text-align: center;
             padding: 10px;
-            transition-timing-function: ease;
-            transition-duration: 1s;
+            transition: font-weight .5s ease-in-out;
+            transition: background-color 1s linear;
             a {
                 text-decoration: none;
+                color: $primary_dark;
             }
             &:hover {
+                --bold: 700;
+                font-weight: var(--bold);
                 background-color: $primary_dark;
-                font-weight: bold;
                 a {
-                    color: aliceblue;
+                    color: $primary;
                 }
             }
         }
+    }
+}
+
+main {
+    ul {
+        padding-inline-start: 1rem;
     }
 }
 
